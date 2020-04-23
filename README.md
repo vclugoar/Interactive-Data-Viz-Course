@@ -1,4 +1,4 @@
-# Prospectus 
+# Prospectus Project 1
 
 Implicit biases are present in our society, and they manifest in different situations.  These biases can affect our behavior without being aware of them. In this project, the question I will be answering is whether subject race affects police behavior, and whether this behavior changes depending on factors such as age, sex, time when the stop was made. Answering this question would allow us to understand what are the factors that could potentially affect being stopped by a police officer, and whether these factors affect the outcome of the stop (e.g., being arrested, given a warning). 
 
