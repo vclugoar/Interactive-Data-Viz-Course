@@ -1,0 +1,11 @@
+# Prospectus Project 2
+
+The project will examine Billboard 100 chart data and Spotify data containing song metrics. 
+The central question I seek to answer is whether there are characteristics that popular songs in the Billboard 100 chart have in common. 
+
+The visualization is intented for anyone who is interested in music, whether they listen to it or study it. The audience 
+does not have to be familiar in order to understand the visualization. 
+
+## Data
+I will be using data obtained from here: https://data.world/kcmillersean/billboard-hot-100-1958-2017/workspace/file?filename=Hot+100+Audio+Features.xlsx 
+The dataset compiles and scrapes Billboard and Spotify data. I do not need to do more analysis but will have to do aggregation. 
