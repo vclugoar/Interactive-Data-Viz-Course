@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- this is the title that goes in the browser tab name  -->
+    <title>Vianny's Project 1</title>
+
+    <!-- custom font: https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>New Orleans Police Traffic Stops</h1>
+      <h4> On a typical day in the United States, police officers make more than 50,000 traffic stops. 
+        The Stanford Policing Project is gathering, analyzing, and releasing records from millions of traffic stops by law enforcement agencies across the country. 
+        This data represents New Orleans traffic stops.
+      </h4>
+    </header>
+
+    <!-- all we need is an element to select -->
+    <div id="d3-container2" style="width:800px; margin:0 auto;" > 
+    <header> <h3> Number of Police Traffic Stops Broken Down by Outcome </h3>
+      <label for="dropdown">Select a Reason for Stop</label>
+      <select id="dropdown2" name="dropdown"></select>
+    </header>
+    </div>
+
+    <div id="d3-container" style="width:900px; margin:0 auto;" > 
+    <header> <h3>Race Breakdown of Police Traffic Stops, by Year</h3>
+      <label for="dropdown">Select an Outcome</label>
+      <select id="dropdown" name="dropdown" ></select>
+    </header>
+    </div>
+    
+    <div id="hover-content"></div>
+    
+
+    <!-- this is the line that loads in d3 -->
+    <script src="../lib/d3.js"></script>
+    <!-- this is the line that loads in the main js script -->
+    <script src="project.js"></script>
+  </body>
+</html>
+

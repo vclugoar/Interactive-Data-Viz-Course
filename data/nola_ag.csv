@@ -1,0 +1,285 @@
+,subject_race,subject_sex,outcome,year,count
+0,asian/pacific islander,female,arrest,2011,5
+1,asian/pacific islander,female,arrest,2012,6
+2,asian/pacific islander,female,arrest,2013,5
+3,asian/pacific islander,female,arrest,2014,9
+4,asian/pacific islander,female,arrest,2015,10
+5,asian/pacific islander,female,arrest,2016,8
+6,asian/pacific islander,female,arrest,2017,9
+7,asian/pacific islander,female,arrest,2018,5
+8,asian/pacific islander,female,citation,2011,36
+9,asian/pacific islander,female,citation,2012,61
+10,asian/pacific islander,female,citation,2013,49
+11,asian/pacific islander,female,citation,2014,73
+12,asian/pacific islander,female,citation,2015,108
+13,asian/pacific islander,female,citation,2016,40
+14,asian/pacific islander,female,citation,2017,40
+15,asian/pacific islander,female,citation,2018,16
+16,asian/pacific islander,female,warning,2011,40
+17,asian/pacific islander,female,warning,2012,45
+18,asian/pacific islander,female,warning,2013,23
+19,asian/pacific islander,female,warning,2014,43
+20,asian/pacific islander,female,warning,2015,73
+21,asian/pacific islander,female,warning,2016,62
+22,asian/pacific islander,female,warning,2017,62
+23,asian/pacific islander,female,warning,2018,32
+24,asian/pacific islander,male,arrest,2011,18
+25,asian/pacific islander,male,arrest,2012,29
+26,asian/pacific islander,male,arrest,2013,20
+27,asian/pacific islander,male,arrest,2014,45
+28,asian/pacific islander,male,arrest,2015,36
+29,asian/pacific islander,male,arrest,2016,38
+30,asian/pacific islander,male,arrest,2017,26
+31,asian/pacific islander,male,arrest,2018,15
+32,asian/pacific islander,male,citation,2011,101
+33,asian/pacific islander,male,citation,2012,158
+34,asian/pacific islander,male,citation,2013,108
+35,asian/pacific islander,male,citation,2014,181
+36,asian/pacific islander,male,citation,2015,220
+37,asian/pacific islander,male,citation,2016,104
+38,asian/pacific islander,male,citation,2017,77
+39,asian/pacific islander,male,citation,2018,54
+40,asian/pacific islander,male,warning,2011,74
+41,asian/pacific islander,male,warning,2012,99
+42,asian/pacific islander,male,warning,2013,38
+43,asian/pacific islander,male,warning,2014,77
+44,asian/pacific islander,male,warning,2015,136
+45,asian/pacific islander,male,warning,2016,106
+46,asian/pacific islander,male,warning,2017,124
+47,asian/pacific islander,male,warning,2018,60
+48,black,female,arrest,2011,1198
+49,black,female,arrest,2012,2076
+50,black,female,arrest,2013,2291
+51,black,female,arrest,2014,2528
+52,black,female,arrest,2015,3052
+53,black,female,arrest,2016,2372
+54,black,female,arrest,2017,2918
+55,black,female,arrest,2018,1237
+56,black,female,citation,2011,2577
+57,black,female,citation,2012,3994
+58,black,female,citation,2013,3112
+59,black,female,citation,2014,3950
+60,black,female,citation,2015,5245
+61,black,female,citation,2016,3137
+62,black,female,citation,2017,3544
+63,black,female,citation,2018,2101
+64,black,female,warning,2011,2658
+65,black,female,warning,2012,3167
+66,black,female,warning,2013,1569
+67,black,female,warning,2014,3306
+68,black,female,warning,2015,5367
+69,black,female,warning,2016,3803
+70,black,female,warning,2017,4904
+71,black,female,warning,2018,2986
+73,black,male,arrest,2011,4552
+74,black,male,arrest,2012,7012
+75,black,male,arrest,2013,6717
+76,black,male,arrest,2014,6931
+77,black,male,arrest,2015,7795
+78,black,male,arrest,2016,6499
+79,black,male,arrest,2017,8578
+80,black,male,arrest,2018,3843
+82,black,male,citation,2011,5327
+83,black,male,citation,2012,7177
+84,black,male,citation,2013,5162
+85,black,male,citation,2014,6252
+86,black,male,citation,2015,7876
+87,black,male,citation,2016,5130
+88,black,male,citation,2017,5766
+89,black,male,citation,2018,3306
+91,black,male,warning,2011,7418
+92,black,male,warning,2012,8221
+93,black,male,warning,2013,3668
+94,black,male,warning,2014,6522
+95,black,male,warning,2015,9457
+96,black,male,warning,2016,6316
+97,black,male,warning,2017,8851
+98,black,male,warning,2018,5435
+99,hispanic,female,arrest,2011,12
+100,hispanic,female,arrest,2012,24
+101,hispanic,female,arrest,2013,33
+102,hispanic,female,arrest,2014,43
+103,hispanic,female,arrest,2015,43
+104,hispanic,female,arrest,2016,38
+105,hispanic,female,arrest,2017,43
+106,hispanic,female,arrest,2018,21
+107,hispanic,female,citation,2011,70
+108,hispanic,female,citation,2012,94
+109,hispanic,female,citation,2013,64
+110,hispanic,female,citation,2014,124
+111,hispanic,female,citation,2015,173
+112,hispanic,female,citation,2016,113
+113,hispanic,female,citation,2017,104
+114,hispanic,female,citation,2018,56
+115,hispanic,female,warning,2011,46
+116,hispanic,female,warning,2012,55
+117,hispanic,female,warning,2013,27
+118,hispanic,female,warning,2014,77
+119,hispanic,female,warning,2015,122
+120,hispanic,female,warning,2016,99
+121,hispanic,female,warning,2017,129
+122,hispanic,female,warning,2018,71
+123,hispanic,male,arrest,2011,130
+124,hispanic,male,arrest,2012,240
+125,hispanic,male,arrest,2013,209
+126,hispanic,male,arrest,2014,261
+127,hispanic,male,arrest,2015,308
+128,hispanic,male,arrest,2016,250
+129,hispanic,male,arrest,2017,324
+130,hispanic,male,arrest,2018,115
+131,hispanic,male,citation,2011,486
+132,hispanic,male,citation,2012,565
+133,hispanic,male,citation,2013,319
+134,hispanic,male,citation,2014,561
+135,hispanic,male,citation,2015,734
+136,hispanic,male,citation,2016,454
+137,hispanic,male,citation,2017,470
+138,hispanic,male,citation,2018,205
+139,hispanic,male,warning,2011,244
+140,hispanic,male,warning,2012,253
+141,hispanic,male,warning,2013,120
+142,hispanic,male,warning,2014,301
+143,hispanic,male,warning,2015,478
+144,hispanic,male,warning,2016,322
+145,hispanic,male,warning,2017,394
+146,hispanic,male,warning,2018,262
+147,other,female,arrest,2012,1
+148,other,female,arrest,2013,1
+149,other,female,arrest,2014,1
+150,other,female,arrest,2015,1
+151,other,female,arrest,2016,2
+152,other,female,arrest,2017,2
+153,other,female,citation,2011,6
+154,other,female,citation,2012,5
+155,other,female,citation,2013,2
+156,other,female,citation,2014,4
+157,other,female,citation,2015,8
+158,other,female,citation,2016,5
+159,other,female,citation,2017,5
+160,other,female,citation,2018,1
+161,other,female,warning,2011,3
+162,other,female,warning,2012,3
+163,other,female,warning,2015,4
+164,other,female,warning,2016,2
+165,other,female,warning,2017,3
+166,other,female,warning,2018,6
+167,other,male,arrest,2011,4
+168,other,male,arrest,2012,3
+169,other,male,arrest,2013,1
+170,other,male,arrest,2014,6
+171,other,male,arrest,2015,4
+172,other,male,arrest,2016,3
+173,other,male,arrest,2017,6
+174,other,male,arrest,2018,1
+175,other,male,citation,2011,16
+176,other,male,citation,2012,15
+177,other,male,citation,2013,7
+178,other,male,citation,2014,16
+179,other,male,citation,2015,25
+180,other,male,citation,2016,9
+181,other,male,citation,2017,13
+182,other,male,citation,2018,5
+183,other,male,warning,2011,2
+184,other,male,warning,2012,2
+185,other,male,warning,2013,3
+186,other,male,warning,2014,7
+187,other,male,warning,2015,15
+188,other,male,warning,2016,8
+189,other,male,warning,2017,17
+190,other,male,warning,2018,11
+191,unknown,female,arrest,2011,1
+192,unknown,female,arrest,2012,2
+193,unknown,female,arrest,2013,5
+194,unknown,female,arrest,2014,11
+195,unknown,female,arrest,2015,5
+196,unknown,female,arrest,2016,6
+197,unknown,female,arrest,2017,5
+198,unknown,female,arrest,2018,2
+199,unknown,female,citation,2011,5
+200,unknown,female,citation,2012,16
+201,unknown,female,citation,2013,11
+202,unknown,female,citation,2014,41
+203,unknown,female,citation,2015,33
+204,unknown,female,citation,2016,19
+205,unknown,female,citation,2017,32
+206,unknown,female,citation,2018,19
+207,unknown,female,warning,2011,12
+208,unknown,female,warning,2012,13
+209,unknown,female,warning,2013,5
+210,unknown,female,warning,2014,24
+211,unknown,female,warning,2015,34
+212,unknown,female,warning,2016,30
+213,unknown,female,warning,2017,38
+214,unknown,female,warning,2018,27
+215,unknown,male,arrest,2011,10
+216,unknown,male,arrest,2012,21
+217,unknown,male,arrest,2013,25
+218,unknown,male,arrest,2014,35
+219,unknown,male,arrest,2015,36
+220,unknown,male,arrest,2016,33
+221,unknown,male,arrest,2017,42
+222,unknown,male,arrest,2018,15
+223,unknown,male,citation,2011,88
+224,unknown,male,citation,2012,96
+225,unknown,male,citation,2013,74
+226,unknown,male,citation,2014,164
+227,unknown,male,citation,2015,223
+228,unknown,male,citation,2016,182
+229,unknown,male,citation,2017,216
+230,unknown,male,citation,2018,140
+231,unknown,male,warning,2011,33
+232,unknown,male,warning,2012,71
+233,unknown,male,warning,2013,36
+234,unknown,male,warning,2014,109
+235,unknown,male,warning,2015,166
+236,unknown,male,warning,2016,144
+237,unknown,male,warning,2017,186
+238,unknown,male,warning,2018,95
+239,white,female,arrest,2011,401
+240,white,female,arrest,2012,647
+241,white,female,arrest,2013,673
+242,white,female,arrest,2014,799
+243,white,female,arrest,2015,831
+244,white,female,arrest,2016,638
+245,white,female,arrest,2017,776
+246,white,female,arrest,2018,312
+247,white,female,citation,2011,1221
+248,white,female,citation,2012,1603
+249,white,female,citation,2013,1027
+250,white,female,citation,2014,1765
+251,white,female,citation,2015,1738
+252,white,female,citation,2016,1148
+253,white,female,citation,2017,1155
+254,white,female,citation,2018,647
+255,white,female,warning,2011,1214
+256,white,female,warning,2012,1347
+257,white,female,warning,2013,651
+258,white,female,warning,2014,1415
+259,white,female,warning,2015,2197
+260,white,female,warning,2016,1740
+261,white,female,warning,2017,1755
+262,white,female,warning,2018,876
+263,white,male,arrest,2011,1377
+264,white,male,arrest,2012,2294
+265,white,male,arrest,2013,1941
+266,white,male,arrest,2014,2224
+267,white,male,arrest,2015,2621
+268,white,male,arrest,2016,2324
+269,white,male,arrest,2017,2582
+270,white,male,arrest,2018,918
+271,white,male,citation,2011,3112
+272,white,male,citation,2012,3925
+273,white,male,citation,2013,2490
+274,white,male,citation,2014,3911
+275,white,male,citation,2015,4000
+276,white,male,citation,2016,2838
+277,white,male,citation,2017,2624
+278,white,male,citation,2018,1323
+279,white,male,warning,2011,2681
+280,white,male,warning,2012,3267
+281,white,male,warning,2013,1512
+282,white,male,warning,2014,3153
+283,white,male,warning,2015,4318
+284,white,male,warning,2016,3067
+285,white,male,warning,2017,3139
+286,white,male,warning,2018,1504

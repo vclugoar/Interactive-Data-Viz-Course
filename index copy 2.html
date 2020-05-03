@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- this is the title that goes in the browser tab name  -->
+    <title>Vianny's Project 2s</title>
+
+    <!-- custom font: https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+   
+
+   <h1 style="float: right; color: #27496d; font-size: 45px;"> 
+    Dancing with a Stranger, Wow., Talk, Old Town Road, and Without Me,
+     were in the <span style="color: #4f98ca">Billboard </span> charts for at least 76% of 2019  </h1>
+     Hover over to see artist name and album. 
+
+    <!-- all we need is an element to select -->
+    <div id="d3-container2" style="float: left; position: relative; width: 1500px; height: 1600px "  > 
+    </div>
+
+
+    <!--- spotify chart-->
+     <h1 style= "font-size: 45px; float: right; color: #27496d; "> 
+        However, Senorita, Lalala, Bad Guy, Trampoline, and Someone You Loved
+        were the most popular songs based on <span style="color: #1DB954 ">Spotify</span> streams </h1>
+     
+
+    <div id="d3-container9" style="float: left; width: 1400px;  height: 500px"  > 
+     
+      <h4>The list differ from songs that have been on charts longest </h4>
+    </div>
+    
+
+    <!--- comparisons -->
+     <div style="width: 1400; " > 
+      <h1 style= "color: #27496d; font-size: 45px;"> These 10 <span style="color: #4f98ca">Billboard </span> and <span style="color: #1DB954;">Spotify</span> songs share similar music characteristics  </h1>
+      Hover over to see song names, average and popularity scores. 
+     </div> 
+
+     <!-- Danceability Title and SVG -->
+     <div> <h3 style= "font-size: 30px; color: #00909e; width: 1200px"> Danceability Scores Across Songs</h3>
+     </div> 
+    <div id="d3-container3" style="float: left; width: 700px" >  
+    </div>
+    <!--Danceability Text-->
+     <!-- white text potential-->
+
+    <div style="font-size: 20px;"> Danceability describes how suitable a track is for dancing based on a combination of musical elements, including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.00 is least danceable, and 1.0 is most danceable (Spotify for Developers). </div> 
+    <div style="font-size: 20px;"> The average danceability score for songs in Billboard charts for 2019 (n = 595) was 0.68, with a range from 0.24 to 0.99. 100% of the songs with the longest number of total weeks on chart had a danceability score above average. Whereas 60% of the Spotify most 
+      popular songs had a danceability score above average. Overall (comparing across 10 songs), 80% of the highlighted songs had a danceability score above average, but the Billboard songs were the most danceable songs. </divstyle="font-size: 18px;> 
+    <div style="font-size: 20px;"> 	Someone You Loved by Lewis Capaldi has the lowest danceability score, with a score of 0.5. Talk by Khalid has the highest danceability score, with a score of 0.90. </div> 
+      
+    <!-- white text potential-->
+    <div style=" color:white"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </div>
+  
+
+    
+    <!-- Speechiness Title and SVG -->
+    <div style= "width: 1500px">
+      <h3 style=" font-size: 30px; color: #00909e; "> Speechiness Scores Across Songs</h3>
+    </div>
+    <div id="d3-container4" style="float: left; width: 700px" > 
+    </div>
+    <!-- Speechiness Text-->
+    <div> Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g., podcast, audio book), the closer to 1.0. Values above 0.66 describe tracks that are probably made entirely of spoken words, and values between 0.33 and 0.66 describe tracks that may contain both music and speech (e.g., rap music). Values below 0.33 most likely represent music and music with few words (Spotify for Developers). 
+    </div>
+    <div> The average speechiness score for songs in Billboard charts for 2019 (n = 595) was 0.14, with a range from 0.02 to 0.56. 80% of the songs with the longest number of total weeks on chart had a speechiness score above average. Similarly, 80% of the Spotify most popular songs had a speechiness score above average. Overall (comparing across 10 songs), 80% of the highlighted songs had a speechiness score above average, and the averages between groups are comparable (0.11 Billboard vs 0.11 Speechiness).  
+    </div>
+    <div> Senorita by Shawn Mendes and Camila Cabello has the lowest speechiness score, with a score of 0.02. Bad Guy by Billie Eilish has the highest speechiness, with a score of 0.38.
+
+    </div>
+    <!-- white text potential-->
+    <div style=" color:white"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </div>
+    
+
+    <!-- Valence Title and SVG -->
+    <div>  <h3 style= "font-size: 30px; color: #00909e"> Valence Scores Across Songs</h3>
+    </div>
+    <div id="d3-container5" style="float: left; width: 700px" > 
+    </div>
+     <!-- Valence Text-->
+     <div>
+       Valence describes the musical positiveness conveyed by a track. Tracks with high valence or with a score approaching 1.0 sound more positive (e.g., happy, cheerful, euphoric), while tracks with low valence or a socre approaching 0.0 sound more negative (e.g., sad, depressed, angry; Spotify for Developers). 
+     </div>
+     <div>
+       The average valence score for songs in Billboard charts for 2019 (n = 595) was 0.48, with scores ranging from 0.036 to 0.97. 40% of the songs with the longest number of total weeks on chart had a valence score above average. Whereas 80% of the Spotify most popular songs had a valence score above average. Overall (comparing across 10 songs), 80% of the highlighted songs had a valence score above average, but Spotify songs were more positive than Billboard songs, with an average of 0.55 for Spotify and 0.45 for Billboard.  
+     </div>
+     <div>
+       Talk by Khalid is the most negative song with a score of 0.35. Senorita by Shawn Mendes and Camila Cabello is the most positive song with a score of 0.75. 
+     </div>
+     
+
+    <!-- white text potential-->
+    <div style=" color:white"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </div>
+
+    <!-- Liveness Title and SVG -->
+    <div><h3 style= "font-size: 30px; color: #00909e"> Liveness Scores Across Songs</h3>
+    </div>
+    <div id="d3-container6" style="float: left; width: 700px" > 
+    </div>
+    <!-- Liveness Text-->
+    <div>
+       Liveness detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live (Spotify for Developers).
+    </div>
+    <div>
+      The average liveness score for songs in the Billboard charts for 2019 (n = 595) was 0.18, with scores ranging from 0.029 to 0.91. 20% of the songs with the longest number of total weeks on chart had a liveness score above average. Similarly, 20% of the Spotify most popular songs had a liveness score above average. Overall (comparing across 10 songs). 20% of the 10 highlighted songs had a liveness score above average, meaning that 80% of the songs were most likely recorded without the presence of an audience. The averages by group are similar, with Billboard having an average score of 0.12, and Spotify with an average score of 0.11. 
+    </div>
+    <div>
+      Talk by Khalid has the lowest liveness score, with a score of 0.6. Dancing With A Stranger by Sam Smith and Normani is the song with the highest liveness score, with a score of 0.22. However, Dancing With A Stranger is far below the 0.8 anchor indicating strong presence of audience during recording. 
+    </div>
+
+     <!-- white text potential-->
+    <div style=" color:white"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </div>
+
+    <!-- Energy Title and SVG -->
+    <div> <h3 style= "font-size: 30px; color: #00909e"> Energy Scores Across Songs</h3> 
+  
+    </div>
+    <div id="d3-container7" style="float: left; width: 700px" > 
+    </div>
+    <!-- Energy Text-->
+    <div>
+      Energy scores range from 0.0 to 1.0, and represents a perceptual measure of intensity and activity. Energetic tracks tend to feel fast, loud, and noisy. For example, death metal tracks have high energy, while classical music tend to have low energy scores (Spotify for Developers). 
+    </div>
+    <div>
+      The average energy score for songs in the Billboard charts for 2019 (n = 595) was 0.62, with scores ranging from 0.06 to 0.96. Overall (comparing across 10 songs). 100% of the 10 highlighted songs had an energy score below average. Spotify’s most popular songs are on average more energetic than Billboard songs that have been on the charts the longest (0.51 for Spotify vs 0.44 for Billboard. 
+    </div>
+    <div>
+      Lalala by Y2K and bbno$ has the lowest energy score, with a score of 0.39. Old Town Road by Lil Nas and Billy Ray Cyrus is the most energetic song, with a score of 0.62. 
+    </div>
+    <!-- white text potential-->
+    <div style=" color:white"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </div>
+
+    <!-- Tempo Title and SVG-->
+    <div> <h3 style= "font-size: 30px; color: #00909e"> Tempo Scores Across Songs</h3>
+    </div>
+    <div id="d3-container8" style="float: left; width: 700px" > 
+    </div>
+    <!-- Tempo Text-->
+    <div>
+      Tempo is the speed or pace of a given piece and it is directly derived from the average beat duration. Tempo is recorded in beats per minute (bpm; Spotify for Developers). 
+    </div>
+    <div>
+    	The average tempo score for songs in the Billboard charts for 2019 (n = 595) was 122.39, with scores ranging from 62.45 to 204.13. 60% of the songs with the longest number of total weeks on chart have a tempo score above average. Similarly, 60% of the Spotify most popular songs have an above average tempo score. Overall (comparing across 10 songs). 60% of the 10 highlighted songs had a liveness score above average. The averages by group are similar, with Billboard having an average score of 122.20, and Spotify with an average score of 123.75. 
+    </div>
+    <div>
+      Wow. By Post Malone has the lowest tempo score, with a score of 99.96. Old Town Road by Lil Nas and Billy Ray Cyrus, and Without Me by Halsey are the songs with the highest tempo scores, with a score of 136.04. 
+    </div>
+        <!-- white text potential-->
+    <div style=" color:white"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </div>
+
+       <!-- Table Title and SVG-->
+    <div> <h3 style= "font-size: 45px; color: #27496d;"> Feature Comparison Between Groups</h3>
+    </div>
+   <table style = " align-items: center " id="d3-table"></table>
+      
+   
+    
+
+    <!-- this is the line that loads in d3 -->
+    <script src="../lib/d3.js"></script>
+    <!-- this is the line that loads in the main js script -->
+    <script src="project2 copy 2.js"></script>
+  </body></body>>
+</html>

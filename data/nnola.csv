@@ -1,0 +1,160 @@
+,subject_race,outcome,reason_for_stop,count
+0,asian/pacific islander,arrest,CALL FOR SERVICE,76
+1,asian/pacific islander,arrest,CITIZEN CONTACT,4
+2,asian/pacific islander,arrest,CRIMINAL VIOLATION,56
+3,asian/pacific islander,arrest,FLAGGED DOWN,7
+4,asian/pacific islander,arrest,JUVENILE VIOLATION,1
+5,asian/pacific islander,arrest,OTHER,12
+6,asian/pacific islander,arrest,PRESENT AT CRIME SCENE,1
+7,asian/pacific islander,arrest,SUSPECT PERSON,31
+8,asian/pacific islander,arrest,SUSPECT VEHICLE,1
+9,asian/pacific islander,arrest,TRAFFIC VIOLATION,95
+10,asian/pacific islander,citation,CALL FOR SERVICE,54
+11,asian/pacific islander,citation,CITIZEN CONTACT,2
+12,asian/pacific islander,citation,CRIMINAL VIOLATION,34
+13,asian/pacific islander,citation,FLAGGED DOWN,1
+14,asian/pacific islander,citation,OTHER,12
+15,asian/pacific islander,citation,SUSPECT PERSON,17
+16,asian/pacific islander,citation,SUSPECT VEHICLE,1
+17,asian/pacific islander,citation,TRAFFIC VIOLATION,1305
+18,asian/pacific islander,warning,CALL FOR SERVICE,23
+19,asian/pacific islander,warning,CITIZEN CONTACT,4
+20,asian/pacific islander,warning,CRIMINAL VIOLATION,9
+21,asian/pacific islander,warning,FLAGGED DOWN,3
+22,asian/pacific islander,warning,OTHER,7
+23,asian/pacific islander,warning,SUSPECT PERSON,18
+24,asian/pacific islander,warning,SUSPECT VEHICLE,9
+25,asian/pacific islander,warning,TRAFFIC VIOLATION,1021
+26,black,arrest,CALL FOR SERVICE,16995
+27,black,arrest,CITIZEN CONTACT,1277
+28,black,arrest,CRIMINAL VIOLATION,9761
+29,black,arrest,FLAGGED DOWN,735
+30,black,arrest,JUVENILE VIOLATION,1344
+31,black,arrest,OTHER,4016
+32,black,arrest,PRESENT AT CRIME SCENE,206
+33,black,arrest,SUSPECT PERSON,9097
+34,black,arrest,SUSPECT VEHICLE,676
+35,black,arrest,TRAFFIC VIOLATION,25495
+36,black,citation,CALL FOR SERVICE,3401
+37,black,citation,CITIZEN CONTACT,441
+38,black,citation,CRIMINAL VIOLATION,2166
+39,black,citation,FLAGGED DOWN,184
+40,black,citation,JUVENILE VIOLATION,344
+41,black,citation,OTHER,899
+42,black,citation,PRESENT AT CRIME SCENE,29
+43,black,citation,SUSPECT PERSON,1359
+44,black,citation,SUSPECT VEHICLE,312
+45,black,citation,TRAFFIC VIOLATION,64523
+46,black,warning,CALL FOR SERVICE,4350
+47,black,warning,CITIZEN CONTACT,1264
+48,black,warning,CRIMINAL VIOLATION,1081
+49,black,warning,FLAGGED DOWN,367
+50,black,warning,JUVENILE VIOLATION,69
+51,black,warning,OTHER,1688
+52,black,warning,PRESENT AT CRIME SCENE,53
+53,black,warning,SUSPECT PERSON,6688
+54,black,warning,SUSPECT VEHICLE,858
+55,black,warning,TRAFFIC VIOLATION,67231
+56,hispanic,arrest,CALL FOR SERVICE,663
+57,hispanic,arrest,CITIZEN CONTACT,27
+58,hispanic,arrest,CRIMINAL VIOLATION,390
+59,hispanic,arrest,FLAGGED DOWN,37
+60,hispanic,arrest,JUVENILE VIOLATION,16
+61,hispanic,arrest,OTHER,74
+62,hispanic,arrest,PRESENT AT CRIME SCENE,6
+63,hispanic,arrest,SUSPECT PERSON,148
+64,hispanic,arrest,SUSPECT VEHICLE,6
+65,hispanic,arrest,TRAFFIC VIOLATION,727
+66,hispanic,citation,CALL FOR SERVICE,219
+67,hispanic,citation,CITIZEN CONTACT,15
+68,hispanic,citation,CRIMINAL VIOLATION,111
+69,hispanic,citation,FLAGGED DOWN,19
+70,hispanic,citation,JUVENILE VIOLATION,1
+71,hispanic,citation,OTHER,41
+72,hispanic,citation,PRESENT AT CRIME SCENE,3
+73,hispanic,citation,SUSPECT PERSON,52
+74,hispanic,citation,SUSPECT VEHICLE,12
+75,hispanic,citation,TRAFFIC VIOLATION,4119
+76,hispanic,warning,CALL FOR SERVICE,131
+77,hispanic,warning,CITIZEN CONTACT,28
+78,hispanic,warning,CRIMINAL VIOLATION,61
+79,hispanic,warning,FLAGGED DOWN,31
+80,hispanic,warning,OTHER,60
+81,hispanic,warning,PRESENT AT CRIME SCENE,2
+82,hispanic,warning,SUSPECT PERSON,139
+83,hispanic,warning,SUSPECT VEHICLE,25
+84,hispanic,warning,TRAFFIC VIOLATION,2523
+85,other,arrest,CALL FOR SERVICE,13
+86,other,arrest,CITIZEN CONTACT,2
+87,other,arrest,CRIMINAL VIOLATION,7
+88,other,arrest,OTHER,3
+89,other,arrest,PRESENT AT CRIME SCENE,1
+90,other,arrest,SUSPECT PERSON,3
+91,other,arrest,TRAFFIC VIOLATION,7
+92,other,citation,CALL FOR SERVICE,3
+93,other,citation,CRIMINAL VIOLATION,3
+94,other,citation,OTHER,2
+95,other,citation,SUSPECT PERSON,2
+96,other,citation,TRAFFIC VIOLATION,132
+97,other,warning,CALL FOR SERVICE,3
+98,other,warning,CITIZEN CONTACT,1
+99,other,warning,CRIMINAL VIOLATION,2
+100,other,warning,OTHER,3
+101,other,warning,SUSPECT PERSON,5
+102,other,warning,TRAFFIC VIOLATION,72
+103,unknown,arrest,CALL FOR SERVICE,77
+104,unknown,arrest,CITIZEN CONTACT,3
+105,unknown,arrest,CRIMINAL VIOLATION,37
+106,unknown,arrest,FLAGGED DOWN,3
+107,unknown,arrest,OTHER,11
+108,unknown,arrest,PRESENT AT CRIME SCENE,3
+109,unknown,arrest,SUSPECT PERSON,15
+110,unknown,arrest,SUSPECT VEHICLE,1
+111,unknown,arrest,TRAFFIC VIOLATION,104
+112,unknown,citation,CALL FOR SERVICE,40
+113,unknown,citation,CITIZEN CONTACT,4
+114,unknown,citation,CRIMINAL VIOLATION,24
+115,unknown,citation,FLAGGED DOWN,1
+116,unknown,citation,OTHER,6
+117,unknown,citation,SUSPECT PERSON,13
+118,unknown,citation,SUSPECT VEHICLE,2
+119,unknown,citation,TRAFFIC VIOLATION,1269
+120,unknown,warning,CALL FOR SERVICE,24
+121,unknown,warning,CITIZEN CONTACT,5
+122,unknown,warning,CRIMINAL VIOLATION,5
+123,unknown,warning,FLAGGED DOWN,4
+124,unknown,warning,JUVENILE VIOLATION,1
+125,unknown,warning,OTHER,13
+126,unknown,warning,SUSPECT PERSON,10
+127,unknown,warning,SUSPECT VEHICLE,5
+128,unknown,warning,TRAFFIC VIOLATION,956
+129,white,arrest,CALL FOR SERVICE,5662
+130,white,arrest,CITIZEN CONTACT,459
+131,white,arrest,CRIMINAL VIOLATION,6070
+132,white,arrest,FLAGGED DOWN,523
+133,white,arrest,JUVENILE VIOLATION,134
+134,white,arrest,OTHER,863
+135,white,arrest,PRESENT AT CRIME SCENE,41
+136,white,arrest,SUSPECT PERSON,2577
+137,white,arrest,SUSPECT VEHICLE,120
+138,white,arrest,TRAFFIC VIOLATION,4910
+139,white,citation,CALL FOR SERVICE,2066
+140,white,citation,CITIZEN CONTACT,299
+141,white,citation,CRIMINAL VIOLATION,3439
+142,white,citation,FLAGGED DOWN,177
+143,white,citation,JUVENILE VIOLATION,7
+144,white,citation,OTHER,539
+145,white,citation,PRESENT AT CRIME SCENE,17
+146,white,citation,SUSPECT PERSON,1545
+147,white,citation,SUSPECT VEHICLE,92
+148,white,citation,TRAFFIC VIOLATION,26346
+149,white,warning,CALL FOR SERVICE,1915
+150,white,warning,CITIZEN CONTACT,511
+151,white,warning,CRIMINAL VIOLATION,1073
+152,white,warning,FLAGGED DOWN,378
+153,white,warning,JUVENILE VIOLATION,5
+154,white,warning,OTHER,691
+155,white,warning,PRESENT AT CRIME SCENE,7
+156,white,warning,SUSPECT PERSON,2482
+157,white,warning,SUSPECT VEHICLE,285
+158,white,warning,TRAFFIC VIOLATION,26489
