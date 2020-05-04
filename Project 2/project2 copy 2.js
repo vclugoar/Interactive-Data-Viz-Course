@@ -18,7 +18,7 @@ const
   // bar
   margin1 = { top: 20, bottom: 40, left: 40, right: 40 },
   width1 = 550 - margin1.left,
-  width2 = 1300,
+  width2 = 1500,
   height1 = window.innerHeight / 3,
   height2 = window.innerHeight / 2,
   paddingInner1 = 0.2
