@@ -83,6 +83,7 @@
   grid-column: 1;
   align-items: center;
   align-content: center;
+  margin: auto;
 }
 
 .section#two {
