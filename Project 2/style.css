@@ -70,7 +70,7 @@
 .section#one {
   display: grid;
   grid-column-gap: 10px;
-  grid-template-columns: 50% 50%
+  grid-template-columns: 50% 50%; 
 }
 
 .section#one > .text {
@@ -81,7 +81,7 @@
 .section#one > .graph {
   grid-column: 1/2;
 }
-
+/* 
 .section#two {
   display: grid;
   grid-column-gap: 10px;
@@ -95,7 +95,7 @@
 .section#two > .graph {
   grid-column: 0 / 2; 
   grid-row: 1;
-}
+} */
 
 .high {
   background-color: #9dc6a7;
