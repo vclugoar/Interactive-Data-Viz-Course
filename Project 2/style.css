@@ -70,16 +70,16 @@
 .section#one {
   display: grid;
   grid-column-gap: 10px;
-  grid-template-columns: 50% 50%; 
+  grid-template-columns: 60% 50%; 
 }
 
 .section#one > .text {
   height: auto;
-  grid-column: 1 / 2;
+  grid-column: 0 / 2;
 }
 
 .section#one > .graph {
-  grid-column: 1/2;
+  grid-column: 2/3;
 }
 /* 
 .section#two {
