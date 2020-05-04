@@ -118,7 +118,7 @@ function init() {
   // x scale for spotify popularity 
   xScaleP = d3
   .scaleBand()
-  .domain(state.data.map(d => d.song))
+  .domain(state.data2.map(d => d.song))
   .range([margin1.left, width2 - margin1.right])
   .paddingInner(paddingInner1);
 
@@ -376,7 +376,7 @@ const rect = svg
           //set colors based on count
           .attr('fill', d => colorFn(d.cum_week))
           .style("stroke", "#d6cdb7")
-          .on("mousemove", function(d){
+          .on("mouseover", function(d){
             tooltip
               .style("left", d3.event.pageX - 50 + "px")
               .style("top", d3.event.pageY - 70 + "px")
@@ -492,7 +492,7 @@ function drawBarPop() {
          return "#1DB954"
       else return "#dbdbdb";
      })
-     .on("mousemove", function(d){
+     .on("mouseover", function(d){
        tooltip
          .style("left", d3.event.pageX - 50 + "px")
          .style("top", d3.event.pageY - 70 + "px")
@@ -520,7 +520,7 @@ function drawBarPop() {
     // x axis label 
   barsvg7
   .append("g")
-  .attr("class", "axis")
+  .attr("class", "x-axis")
   .attr("transform", `translate(0, ${height2 - margin1.bottom})`)
   .call(xAxis1)
   .append("text")
@@ -544,16 +544,13 @@ function drawBarPop() {
         .attr("class", "dot")
         .attr("opacity", 1)
         .attr("r", radius)
-        .attr("cy", d => yScaleL(d.total_weeks))
-        .attr("cx", d => margin.left) 
+        .attr("cy", d => yScaleP(d.total_weeks))
         .attr("fill", "#f0a500")
         .call(enter =>
             enter
-              .attr("cx", d => xScaleP(d.song))
-             
+              .attr("cx", d => xScaleP(d.song)+ 5)  
           )
         ,
-      
   )
   .on("mousemove", function(d){
     tooltip
@@ -727,17 +724,7 @@ function drawBarSpeechA() {
   })
   .on("mouseout", function(d){ tooltip.style("display", "none");});
   
-  // append text
-  const text = barsvg2
-    .selectAll("text")
-    .data(state.data)
-    .join("text")
-    .attr("class", "label")
-    // this allows us to position the text in the center of the bar
-    .attr("x", d => xScale(d.song) + (xScale.bandwidth() / 2))
-    .attr("y", d => yScale1(d.speechiness))
 
-    ;
 
   // axis label 
   barsvg2
