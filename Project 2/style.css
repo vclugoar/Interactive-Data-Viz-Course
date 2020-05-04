@@ -55,7 +55,7 @@
     text-align: center;
   }
 
-  .axis .domain {  
+  .x-axis .domain {  
      display: none;  
      font-size: 16px;        
   } 
@@ -76,6 +76,7 @@
 .section#one > .text {
   height: auto;
   grid-column: 2;
+  text-align: left;
 }
 
 .section#one > .graph {
@@ -85,16 +86,17 @@
 .section#two {
   display: grid;
   grid-column-gap: 10px;
-  grid-template-columns: 40% 60%; 
+  grid-template-columns: 90% 10%; 
 }
 
 .section#two > .text {
   height: auto;
-  grid-column: 1;
-}
+  grid-column: 2;
+  text-align: left;
+} 
 
 .section#two > .graph {
-  grid-column: 2;
+  grid-column: 1;
 }
 
 .high {
