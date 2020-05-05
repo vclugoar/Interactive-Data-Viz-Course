@@ -83,7 +83,6 @@
   font-size: 1.4vw;
 }
 
-
   .section#one > .graph {
     grid-column: 1;
     align-items: stretch;
@@ -160,4 +159,10 @@ td {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  min-height: 100px;
 }
