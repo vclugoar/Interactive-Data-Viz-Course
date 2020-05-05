@@ -73,19 +73,19 @@
 .section#one {
   display: grid;
   grid-column-gap: 0px;
-  grid-template-columns: 60% 40%; 
+  grid-template-columns: 50% 50%; 
 }
 
 .section#one > .text {
   height: auto;
   grid-column: 2;
-  text-align: left;
+  text-align: center;
   font-size: 1.4vw;
 }
 
   .section#one > .graph {
-    grid-column: 1;
-    align-items: stretch;
+    grid-column: 1 ;
+    align-items: flex-end;
   }
 
 .popC { 
