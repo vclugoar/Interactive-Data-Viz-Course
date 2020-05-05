@@ -84,7 +84,7 @@
   .section#one {
     display: grid;
     grid-column-gap: 0px;
-    grid-template-columns: 50% 50%; 
+    grid-template-columns: 40% 60%; 
     }
   }
 
