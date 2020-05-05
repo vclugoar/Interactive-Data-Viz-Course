@@ -13,13 +13,13 @@
 
    
   <div class="section">
-   <h1 style="float: right; color: #27496d; font-size: 45px;"> 
+   <h1 class="main-header"> 
     Dancing with a Stranger, Wow., Talk, Old Town Road, and Without Me,
      were in the <span style="color: #4f98ca">Billboard </span> charts for at least 76% of 2019  </h1>
      Hover over to see artist name and album. 
 
     <!-- all we need is an element to select -->
-    <div id="d3-container2" style="float: left; position: relative; width: 1400px; height: 1600px "  > 
+    <div id="d3-container2" style="overflow: visible; box-shadow : -100px -100px 10000px transparent; float: left; position: relative; width: 1400px; height: 1600px "  > 
     </div>
 
   </div>
@@ -28,13 +28,13 @@
     <!--- spotify chart-->
 
   <div class="section"> 
-     <h1 style= "font-size: 45px; float: right; color: #27496d; "> 
+     <h1 class= "main-header"> 
         However, Senorita, Lalala, Bad Guy, Trampoline, and Someone You Loved
         were the most popular songs based on <span style="color: #1DB954 ">Spotify</span> streams </h1>
 
   </div>
 
-    <div class="graph" id="d3-container9" style="float: left; width: 1400px;  height: 500px"  > 
+    <div class="graph" id="d3-container9" style="margin: auto; width: 1400px;  height: 500px"  > 
     </div>
    
 
@@ -43,7 +43,7 @@
     <!--- comparisons -->
     
   <div class = "section"> 
-      <h1 style= "float: right; color: #27496d; font-size: 45px; "> 
+      <h1 class= "main-header"> 
       These 10 <span style="color: #4f98ca">Billboard </span> and <span style="color: #1DB954;">Spotify</span> 
       songs share similar music characteristics 
      </h1> 
@@ -51,16 +51,16 @@
 
      <!-- Danceability Title and SVG -->
 
-     <div class="section"> <h3 style= "font-size: 30px; color: #00909e; width: 1200px"> Danceability Scores Across Songs</h3>
+     <div class="section"> <h3 class="comp-header"> Danceability Scores Across Songs</h3>
      </div> 
 
   <div class="section" id="one"> 
       <div id="d3-container3" class="graph" style="float: left; width: 700px" >  
       </div>
-    <!--Danceability Text-->
-     <!-- white text potential-->
 
-    <div class="text" style="font-size: 20px;"> <p>Danceability describes how suitable a track is for dancing based on a combination of musical elements, including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.00 is least danceable, and 1.0 is most danceable (Spotify for Developers). </p>
+    <!--Danceability Text-->
+
+    <div class="text"> <p>Danceability describes how suitable a track is for dancing based on a combination of musical elements, including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.00 is least danceable, and 1.0 is most danceable (Spotify for Developers). </p>
     <p>The average danceability score for songs in Billboard charts for 2019 (n = 595) was 0.68, with a range from 0.24 to 0.99. 100% of the songs with the longest number of total weeks on chart had a danceability score above average. Whereas 60% of the Spotify most 
       popular songs had a danceability score above average. Overall (comparing across 10 songs), 80% of the highlighted songs had a danceability score above average, but the Billboard songs were the most danceable songs. </p> 
     <p>	Someone You Loved by Lewis Capaldi has the lowest danceability score, with a score of 0.5. Talk by Khalid has the highest danceability score, with a score of 0.90. </p>
@@ -69,7 +69,7 @@
 
     <!-- Speechiness Title and SVG -->
     <div class="section" style= "width: 1500px">
-      <h3 style=" font-size: 30px; color: #00909e; "> Speechiness Scores Across Songs</h3>
+      <h3 class = "comp-header"> Speechiness Scores Across Songs</h3>
     </div>
 
   <div class= "section" id="one"> 
@@ -92,7 +92,7 @@
     
 
     <!-- Valence Title and SVG -->
-    <div class="section">  <h3 style= "font-size: 30px; color: #00909e; width: 1500px"> 
+    <div class="section">  <h3 class="comp-header"> 
       Valence Scores Across Songs</h3>
     </div>
 
@@ -100,7 +100,7 @@
     <div id="d3-container5" class="graph" style="float: left; width: 700px" > 
     </div>
      <!-- Valence Text-->
-     <div class="text" style="font-size: 20px;">
+     <div class="text" >
        <p>
          Valence describes the musical positiveness conveyed by a track. Tracks with high valence or with a score approaching 1.0 sound more positive (e.g., happy, cheerful, euphoric), while tracks with low valence or a socre approaching 0.0 sound more negative (e.g., sad, depressed, angry; Spotify for Developers). 
         </p>
@@ -113,19 +113,17 @@
       </div>
 
   </div>
-     
-
 
     <!-- Liveness Title and SVG -->
     <div class=section >
-      <div><h3 style= "font-size: 30px; color: #00909e"> Liveness Scores Across Songs</h3>
+      <div><h3 class="comp-header"> Liveness Scores Across Songs</h3>
       </div>
     </div>
   <div class=section  id="one">
     <div id="d3-container6" class="graph" style="float: left; width: 700px" > 
     </div>
     <!-- Liveness Text-->
-    <div class="text" style="font-size: 20px;">
+    <div class="text" >
     <p>
       Liveness detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live (Spotify for Developers).
     </p>
@@ -142,14 +140,14 @@
 
     <!-- Energy Title and SVG -->
     <div class="section"> 
-      <h3 style= "font-size: 30px; color: #00909e"> Energy Scores Across Songs</h3> 
+      <h3 class="comp-header"> Energy Scores Across Songs</h3> 
     </div>
 
 <div class="section" id="one">
       <div id="d3-container7" class="graph" style="float: left; width: 700px" > 
       </div>
     <!-- Energy Text-->
-    <div class="text" style="font-size: 20px;">
+    <div class="text">
     <p>
       Energy scores range from 0.0 to 1.0, and represents a perceptual measure of intensity and activity. Energetic tracks tend to feel fast, loud, and noisy. For example, death metal tracks have high energy, while classical music tend to have low energy scores (Spotify for Developers). 
     </p>
@@ -165,7 +163,7 @@
 
     <!-- Tempo Title and SVG-->
     <div class="section"> 
-      <h3 style= "font-size: 30px; color: #00909e"> Tempo Scores Across Songs</
+      <h3 class="comp-header"> Tempo Scores Across Songs 
       <h3>
     </div>
 
@@ -173,7 +171,7 @@
     <div id="d3-container8" class="graph" style="float: left; width: 700px" > 
     </div>
     <!-- Tempo Text-->
-    <div class="text" style="font-size: 20px;">
+    <div class="text" >
     <p>
       Tempo is the speed or pace of a given piece and it is directly derived from the average beat duration. Tempo is recorded in beats per minute (bpm; Spotify for Developers). 
     </p>

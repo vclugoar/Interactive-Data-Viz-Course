@@ -8,9 +8,10 @@
   }
 
   .axis-label {
-    font-size: 14px;
+    font-size: 16px;
     fill: black;
     text-anchor: middle;
+    font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
   }
   
   .trend {
@@ -20,7 +21,7 @@
 
   body {
     /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
-    font-family: "Optima", sans-serif;
+    font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
     padding: 1em 3em;
     color: black;
     fill: black; 
@@ -29,6 +30,7 @@
   }
   
   #tooltip {
+    font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
     display: block;
     height: 50px;
   }
@@ -57,7 +59,8 @@
 
   .x-axis .domain {  
      display: none;  
-     font-size: 16px;        
+     font-size: 16px; 
+     font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;       
   } 
 
   /* section */
@@ -77,6 +80,7 @@
   height: auto;
   grid-column: 2;
   text-align: left;
+  font-size: 20px;
 }
 
 .section#one > .graph {
@@ -126,3 +130,28 @@ td {
   background-color: aliceblue;
 }
 
+.main-header {
+  float: right; 
+  color: #27496d; 
+  font-size: 50px;
+}
+
+.comp-header { 
+  font-size: 42px; 
+  color: #00909e; 
+  width: 1500px;
+}
+
+.y-axis-label-p { 
+  font-size: 16px;
+  fill: gray;
+  text-anchor: middle;
+  font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
+}
+
+.z-axis-label-p { 
+  font-size: 16px;
+  fill: #f0a500;
+  text-anchor: middle;
+  font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
+}
