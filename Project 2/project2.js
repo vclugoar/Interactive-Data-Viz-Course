@@ -95,6 +95,7 @@ d3.csv("../data/feature_comp.csv", d3.autoType)
   init();
 });
 
+
 /* INITIALIZING FUNCTION */
 function init() {
 
@@ -221,10 +222,14 @@ function init() {
     .select("#d3-container2")
     .attr("align","center")
     .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", "translate(200, 400)");
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "-190 -400 1300 1600")
+    .classed("svg-content", true);
+    // .append("svg")
+    // .attr("width", width + margin.left + margin.right)
+    // .attr("height", height + margin.top + margin.bottom)
+    // .append("g")
+    // .attr("transform", "translate(200, 400)");
 
    // create svg element for barchart danceability
    barsvg = d3
@@ -343,6 +348,7 @@ function init() {
   svg.append('g')
     .classed('y axis', true)
     .call(yAxis)
+
     
   
   // call the draw function 
@@ -357,6 +363,8 @@ function init() {
   drawTable(); 
 
 }  
+
+
 
 function drawHeat() { 
 
