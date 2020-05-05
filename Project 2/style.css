@@ -183,7 +183,7 @@ td {
 }
 
 /* for smaller screens*/
-@media (min-width: 1441px)  {
+@media (max-width: 1440px)  {
   .svg1 {
     transform: translate(0px,0px);
   
