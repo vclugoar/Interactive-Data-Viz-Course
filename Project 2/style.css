@@ -83,11 +83,12 @@
   font-size: 1.4vw;
 }
 
-.section#one > .graph {
-  grid-column: 1;
-  align-items: right;
-  align-content: right;
-
+@media (max-width: 1380px){
+  .section#one > .graph {
+    grid-column: 1;
+    align-items: right;
+    align-content: right;
+  }
 }
 
 
