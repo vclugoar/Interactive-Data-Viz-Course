@@ -70,16 +70,28 @@
   height: auto;
 }
 
+/* for smaller screens */
+@media (max-width: 5600px) {
 .section#one {
   display: grid;
   grid-column-gap: 0px;
-  grid-template-columns: 50% 50%; 
+  grid-template-columns: 60% 40%; 
+  }
 }
+
+/* for bigger screens */
+@media (min-width: 5601px) {
+  .section#one {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-template-columns: 50% 50%; 
+    }
+  }
 
 .section#one > .text {
   height: auto;
   grid-column: 2;
-  text-align: center;
+  text-align: left;
   font-size: 1.4vw;
 }
 
