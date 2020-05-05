@@ -249,17 +249,16 @@ function init() {
     .select("#d3-container2")
     //.attr("align","center")
     .append("svg")
-    .attr("width", 960)
-    .attr("height", 1400)
-    .call(responsivefy);
-    // .attr("preserveAspectRatio", "xMinYMin meet")
+    //.call(responsivefy);
+    .attr("preserveAspectRatio", "xMinYMin meet")
     // .attr("viewBox", "-190 -400 1300 1600")
     // .classed("svg-content", true);
     // .append("svg")
-    // .attr("width", width + margin.left + margin.right)
-    // .attr("height", height + margin.top + margin.bottom)
-    // .append("g")
-    // .attr("transform", "translate(200, 400)");
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(200, 400)")
+    .call(responsivefy);
 
    // create svg element for barchart danceability
    barsvg = d3
@@ -705,20 +704,6 @@ function drawBarDncA() {
     .attr("color", "#f0a500")
     ;
 
-  // x axis label 
-  barsvg
-    .append("g")
-    .attr("class", "axis")
-    .attr("transform", `translate(0, ${height2 - margin1.bottom})`)
-    .call(xAxis1)
-    .append("text")
-    .attr("class", "axis-label")
-    .attr("x", "50%")
-    .attr("dx", "-27em")
-    .attr("dy", "2em")
-    .text("Song")
-    ;
-
 }
 
 function drawBarSpeechA() { 
@@ -764,20 +749,6 @@ function drawBarSpeechA() {
   .on("mouseout", function(d){ tooltip.style("display", "none");});
   
 
-
-  // axis label 
-  barsvg2
-    .append("g")
-    .attr("class", "axis")
-    .attr("transform", `translate(0, ${height2 - margin1.bottom})`)
-    .call(xAxis1)
-    .append("text")
-    .attr("class", "axis-label")
-    .attr("x", "50%")
-    .attr("dx", "-27em")
-    .attr("dy", "2em")
-    .text("Song")
-    ;
 
   barsvg2.append('g')
     .classed('y axis', true)
@@ -900,19 +871,6 @@ function drawBarValA() {
   
 
 
-  // x axis label
-  barsvg3
-    .append("g")
-    .attr("class", "axis")
-    .attr("transform", `translate(0, ${height2 - margin1.bottom})`)
-    .call(xAxis2)
-    .append("text")
-    .attr("class", "axis-label")
-    .attr("x", "50%")
-    .attr("dx", "-30em")
-    .attr("dy", "2em")
-    .text("Song")
-    ;
   // y axis label
   barsvg3.append('g')
     .classed('y axis', true)
