@@ -71,7 +71,7 @@
 }
 
 /* for smaller screens */
-@media (max-width: 5600px) {
+@media (max-width: 1440px) {
 .section#one {
   display: grid;
   grid-column-gap: 0px;
@@ -80,7 +80,7 @@
 }
 
 /* for bigger screens */
-@media (min-width: 5601px) {
+@media (min-width: 1441px) {
   .section#one {
     display: grid;
     grid-column-gap: 0px;
