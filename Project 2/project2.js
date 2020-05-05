@@ -95,9 +95,6 @@ d3.csv("../data/feature_comp.csv", d3.autoType)
   init();
 });
 
-const sw = screen.width; 
-console.log(" this is sw" + sw); 
-
 function responsivefy(svg) {
   // get container + svg aspect ratio
   var container = d3.select(svg.node().parentNode),
@@ -517,7 +514,7 @@ function drawBarPop() {
  
 
      // append rects
-     const rect2 = barsvg7
+    const rect2 = barsvg7
      .selectAll("rect")
      .data(sortedDataPop)
      .join("rect")
@@ -525,6 +522,7 @@ function drawBarPop() {
      .attr("x", d => xScaleP(d.song))
      .attr("width", xScaleP.bandwidth())
      .attr("height", d => height2 - margin1.bottom - yScaleP(d.popularity))
+     .attr("class", "svg1")
      .attr("fill", d => {
       if (d.song === "Wow." || d.song === "Dancing With A Stranger"
         || d.song === "Without Me" || d.song === "Talk" || d.song === "Old Town Road") 

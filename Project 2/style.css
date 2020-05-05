@@ -64,6 +64,8 @@
      font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;       
   } 
 
+
+
 /* section */
 .section {
   margin: 5%;
@@ -79,8 +81,10 @@
   }
 }
 
+
+
 /* for bigger screens */
-@media (min-width: 1441px) {
+@media (min-width: 1441px)     {
   .section#one {
     display: grid;
     grid-column-gap: 0px;
@@ -100,9 +104,6 @@
     align-items: flex-end;
   }
 
-.popC { 
-  align-items: flex-start;
-}
 
 
 .high {
@@ -173,8 +174,18 @@ td {
   left: 0;
 }
 
-svg {
-  width: 100%;
-  height: 100%;
-  min-height: 100px;
+/* for bigger screens*/
+@media (min-width: 1441px)  {
+  .svg1 {
+    transform: translate(80px,0px);
+  
+  } 
+}
+
+/* for smaller screens*/
+@media (min-width: 1441px)  {
+  .svg1 {
+    transform: translate(0px,0px);
+  
+  } 
 }
