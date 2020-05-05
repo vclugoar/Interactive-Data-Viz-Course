@@ -16,12 +16,10 @@
    <h1 class="main-header"> 
     Dancing with a Stranger, Wow., Talk, Old Town Road, and Without Me,
      were in the <span style="color: #4f98ca">Billboard </span> charts for at least 76% of 2019  </h1>
-     Hover over to see artist name and album. 
-
+    <p class="sub-text">Hover over to see artist name and album. </p> 
     <!-- all we need is an element to select -->
-    <div id="d3-container2" style="overflow: visible; box-shadow : -100px -100px 10000px transparent; float: left; position: relative; width: 1400px; height: 1600px "  > 
+    <div id="d3-container2"  style="float: left; width: 1400px; height: 1600px "  > 
     </div>
-
   </div>
 
 
@@ -34,7 +32,7 @@
 
   </div>
 
-    <div class="graph" id="d3-container9" style=" display: block; margin: 0 auto; float: right ; width: 1700px;  height: 500px"  > 
+    <div class="graph" id="d3-container9" style="float: left; ; width: 1450px;  height: 500px"  > 
     </div>
    
 
@@ -51,7 +49,8 @@
 
      <!-- Danceability Title and SVG -->
 
-     <div class="section"> <h3 class="comp-header"> Danceability Scores Across Songs</h3>
+     <div class="section" style="width: 1500px;"> 
+       <h3 class="comp-header"> Danceability Scores Across Songs</h3>
      </div> 
 
   <div class="section" id="one"> 
@@ -59,11 +58,14 @@
       </div>
 
     <!--Danceability Text-->
-
-    <div class="text"> <p>Danceability describes how suitable a track is for dancing based on a combination of musical elements, including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.00 is least danceable, and 1.0 is most danceable (Spotify for Developers). </p>
+    <div class="text"> 
+    <p>Danceability describes how suitable a track is for dancing based on a combination of musical elements, including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.00 is least danceable, and 1.0 is most danceable (Spotify for Developers). 
+    </p>
     <p>The average danceability score for songs in Billboard charts for 2019 (n = 595) was 0.68, with a range from 0.24 to 0.99. 100% of the songs with the longest number of total weeks on chart had a danceability score above average. Whereas 60% of the Spotify most 
-      popular songs had a danceability score above average. Overall (comparing across 10 songs), 80% of the highlighted songs had a danceability score above average, but the Billboard songs were the most danceable songs. </p> 
-    <p>	Someone You Loved by Lewis Capaldi has the lowest danceability score, with a score of 0.5. Talk by Khalid has the highest danceability score, with a score of 0.90. </p>
+      popular songs had a danceability score above average. Overall (comparing across 10 songs), 80% of the highlighted songs had a danceability score above average, but the Billboard songs were the most danceable songs. 
+    </p> 
+    <p>	Someone You Loved by Lewis Capaldi has the lowest danceability score, with a score of 0.5. Talk by Khalid has the highest danceability score, with a score of 0.90. 
+    </p>
       </div>
   </div>
 
@@ -76,7 +78,7 @@
     <div id="d3-container4" class="graph" style="float: left; width: 700px" > 
     </div>
     <!-- Speechiness Text-->
-    <div class="text" style="font-size: 20px;">
+    <div class="text" >
       <p>
         Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g., podcast, audio book), the closer to 1.0. Values above 0.66 describe tracks that are probably made entirely of spoken words, and values between 0.33 and 0.66 describe tracks that may contain both music and speech (e.g., rap music). Values below 0.33 most likely represent music and music with few words (Spotify for Developers). 
       </p>
@@ -116,9 +118,9 @@
 
     <!-- Liveness Title and SVG -->
     <div class=section >
-      <div><h3 class="comp-header"> Liveness Scores Across Songs</h3>
-      </div>
+      <h3 class="comp-header"> Liveness Scores Across Songs</h3>
     </div>
+
   <div class=section  id="one">
     <div id="d3-container6" class="graph" style="float: left; width: 700px" > 
     </div>

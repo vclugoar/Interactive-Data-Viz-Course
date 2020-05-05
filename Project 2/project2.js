@@ -216,7 +216,7 @@ function init() {
   avgVal = 0.47; 
 
 
-  // create svg element for heatmap 
+  // create svg element for heatmap
   svg = d3
     .select("#d3-container2")
     .attr("align","center")
@@ -224,7 +224,7 @@ function init() {
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+    .attr("transform", "translate(200, 400)");
 
    // create svg element for barchart danceability
    barsvg = d3
