@@ -64,8 +64,7 @@
      font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;       
   } 
 
-  /* section */
-  
+/* section */
 .section {
   margin: 5%;
   height: auto;
@@ -73,7 +72,7 @@
 
 .section#one {
   display: grid;
-  grid-column-gap: 10px;
+  grid-column-gap: 0px;
   grid-template-columns: 60% 40%; 
 }
 

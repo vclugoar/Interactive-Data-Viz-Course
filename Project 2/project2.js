@@ -295,12 +295,13 @@ function init() {
    // create svg element for liveness
    barsvg4 = d3
    .select("#d3-container6")
-   .attr("align","center")
+  // .attr("align","center")
    .append("svg")
    .attr("width", width2 + margin1.left + margin1.right)
    .attr("height", height2 + margin1.top + margin1.bottom)
   //.attr("height", 200)
    .append("g")
+   .attr("preserveAspectRatio", "xMinYMin meet")
    .attr("transform", "translate(" + margin1.left + "," + margin1.top + ")")
    .call(responsivefy);
  
