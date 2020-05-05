@@ -690,6 +690,16 @@ function drawBarDncA() {
 })
 .on("mouseout", function(d){ tooltip.style("display", "none");});
 
+// x axis
+barsvg
+    .append("g")
+    .attr("class", "axis")
+    .attr("transform", `translate(0, ${height2 - margin1.bottom})`)
+    .call(xAxis1)
+    .append("text")
+    
+    ;
+
  // y axis label 
   barsvg.append('g')
     .classed('y axis', true)
@@ -749,8 +759,17 @@ function drawBarSpeechA() {
   })
   .on("mouseout", function(d){ tooltip.style("display", "none");});
   
+// x axis
+barsvg2
+    .append("g")
+    .attr("class", "axis")
+    .attr("transform", `translate(0, ${height2 - margin1.bottom})`)
+    .call(xAxis1)
+    .append("text")
+    
+    ;
 
-
+// y axis
   barsvg2.append('g')
     .classed('y axis', true)
     .call(yAxis2.scale(yScale1))
@@ -870,7 +889,15 @@ function drawBarValA() {
 })
 .on("mouseout", function(d){ tooltip.style("display", "none");});
   
-
+  // x axis
+  barsvg3
+    .append("g")
+    .attr("class", "axis")
+    .attr("transform", `translate(0, ${height2 - margin1.bottom})`)
+    .call(xAxis1)
+    .append("text")
+    
+    ;
 
   // y axis label
   barsvg3.append('g')
@@ -927,20 +954,15 @@ function drawBarLiveA() {
   })
   .on("mouseout", function(d){ tooltip.style("display", "none");});
   
-    
+  // x axis   
   barsvg4
     .append("g")
     .attr("class", "axis")
     .attr("transform", `translate(0, ${height2 - margin1.bottom})`)
     .call(xAxis1)
-    .append("text")
-    .attr("class", "axis-label")
-    .attr("x", "50%")
-    .attr("dx", "-30em")
-    .attr("dy", "2em")
-    .text("Song")
     ;
 
+  // y axis 
   barsvg4.append('g')
     .classed('y axis', true)
     .call(yAxis2.scale(yScale3))
@@ -1036,11 +1058,7 @@ function drawBarEnA() {
     .attr("transform", `translate(0, ${height2 - margin1.bottom})`)
     .call(xAxis1)
     .append("text")
-    .attr("class", "axis-label")
-    .attr("x", "50%")
-    .attr("dx", "-30em")
-    .attr("dy", "2em")
-    .text("Song")
+    
     ;
 
   // y axis label 
@@ -1136,12 +1154,6 @@ function drawBarTemA() {
      .attr("class", "axis")
      .attr("transform", `translate(0, ${height2 - margin1.bottom})`)
      .call(xAxis1)
-     .append("text")
-     .attr("class", "axis-label")
-     .attr("x", "50%")
-     .attr("dx", "-30em")
-     .attr("dy", "2em")
-     .text("Song")
      ;
  
   // y axis label 

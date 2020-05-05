@@ -83,12 +83,14 @@
   font-size: 1.4vw;
 }
 
-@media (max-width: 1380px){
+
   .section#one > .graph {
     grid-column: 1;
-    align-items: right;
-    align-content: right;
+    align-items: stretch;
   }
+
+.popC { 
+  align-items: flex-start;
 }
 
 
