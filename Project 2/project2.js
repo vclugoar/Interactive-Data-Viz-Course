@@ -565,6 +565,7 @@ function drawBarPop() {
   .call(xAxis1)
   .append("text")
   .attr("class", "axis-label")
+  
   .attr("x", "50%")
   .attr("dx", "-2em")
   .attr("dy", "2em")
@@ -585,6 +586,7 @@ function drawBarPop() {
         .attr("opacity", 1)
         .attr("r", radius)
         .attr("cy", d => yScaleP(d.total_weeks))
+        .attr("class", "svg1")
         .attr("fill", "#f0a500")
         .call(enter =>
             enter
@@ -605,7 +607,7 @@ function drawBarPop() {
 // add y axis for scatter
 barsvg7
  .append("g")
- .attr("class", "axis y-axis")
+ .attr("class", "z-axis")
  .attr("transform", `translate(1260, 0)`)
  .call(yAxis6)
  .append("text")
