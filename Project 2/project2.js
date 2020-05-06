@@ -544,7 +544,7 @@ function drawBarPop() {
  
    // y axis label
    barsvg7.append('g')
-    .classed('y axis', true)
+    .classed('y-axis', true)
     .call(yAxis7.scale(yScaleP))
     .attr('transform', 'translate(40, 0)')
     .append("text")

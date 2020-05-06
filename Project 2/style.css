@@ -66,6 +66,7 @@
 
 
 
+
 /* section */
 .section {
   margin: 5%;
@@ -171,7 +172,7 @@ td {
     fill: #f0a500;
     text-anchor: middle;
     font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
-    transform: translate(1000px,0px)
+    transform: translate(1200px,0px)
   }
 }
 
@@ -216,10 +217,16 @@ td {
 @media (min-width: 1441px) { 
   .z-axis { 
 
-    transform: translate(100px,0px);
+    transform: translate(1200px,0px);
   }
 }
 
+/* for bigger screens */ 
+@media (min-width: 1441px) { 
+  .y-axis {
+    transform: translate(80px, 0px);
+  }
+}
 
 /*
  for bigger screens
