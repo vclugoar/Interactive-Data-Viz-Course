@@ -11,7 +11,7 @@
 
   .axis-label {
     font-size: 1.2vw;
-    fill: red;
+    fill: purple;
     text-anchor: middle;
     font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
   }
@@ -123,7 +123,7 @@
   .section#one > .graph {
     grid-column: 1 ;
     align-items: flex-end;
-    width: 800px;
+    width: 900px;
   }
 }
 
@@ -183,13 +183,28 @@ td {
   font-size: 1.3vw;
 }
 
-.svg-container {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-  overflow: hidden;
-  width: 1400px;
-}
+/* for smaller screens */ 
+@media (max-width: 1440px) { 
+  .svg-container {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    width: 1400px;
+  }
+} 
+
+/* for bigger screens */ 
+@media (min-width: 1441px) { 
+  .svg-container {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    width: 1800px;
+  }
+} 
+
 .svg-content {
   display: inline-block;
   position: absolute;
