@@ -11,7 +11,7 @@
 
   .axis-label {
     font-size: 1.2vw;
-    fill: blue;
+    fill: red;
     text-anchor: middle;
     font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
   }
@@ -109,12 +109,23 @@
   font-size: 1.4vw;
 }
 
+/* for smaller screens */
+@media (max-width: 1440px) {
   .section#one > .graph {
     grid-column: 1 ;
     align-items: flex-end;
+    width: 700px;
   }
+}
 
-
+/* for bigger screens */
+@media (max-width: 1440px) {
+  .section#one > .graph {
+    grid-column: 1 ;
+    align-items: flex-end;
+    width: 800px;
+  }
+}
 
 .high {
   background-color: #9dc6a7;
