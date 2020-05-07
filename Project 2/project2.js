@@ -594,7 +594,7 @@ function drawBarPop() {
           )
         ,
   )
-  .on("mousemove", function(d){
+  .on("mouseover", function(d){
     tooltip
       .style("left", d3.event.pageX - 50 + "px")
       .style("top", d3.event.pageY - 70 + "px")
@@ -652,7 +652,7 @@ function drawBarDncA() {
         return "#1DB954"
      else return "#dbdbdb";
     })
-    .on("mousemove", function(d){
+    .on("mouseover", function(d){
       tooltip
         .style("left", d3.event.pageX - 50 + "px")
         .style("top", d3.event.pageY - 70 + "px")
@@ -684,7 +684,7 @@ function drawBarDncA() {
    .attr("y", d => yScale(d.danceability) - 30)
    .attr("x", d => xScale(d.song))
    .attr("preserveAspectRatio", "true")
-   .on("mousemove", function(d){
+   .on("mouseover", function(d){
     tooltip
       .style("left", d3.event.pageX - 50 + "px")
       .style("top", d3.event.pageY - 70 + "px")
@@ -753,7 +753,7 @@ function drawBarSpeechA() {
          return "#1DB954"
       else return "#dbdbdb";
      })
-    .on("mousemove", function(d){
+    .on("mouseover", function(d){
       tooltip
         .style("left", d3.event.pageX - 50 + "px")
         .style("top", d3.event.pageY - 70 + "px")
@@ -809,7 +809,7 @@ barsvg2
   .attr("y", d => yScale1(d.speechiness) - 30)
   .attr("x", d => xScale(d.song))
   .attr("preserveAspectRatio", "true")
-  .on("mousemove", function(d){
+  .on("mouseover", function(d){
     tooltip
       .style("left", d3.event.pageX - 50 + "px")
       .style("top", d3.event.pageY - 70 + "px")
@@ -851,7 +851,7 @@ function drawBarValA() {
          return "#1DB954"
       else return "#dbdbdb";
      })
-    .on("mousemove", function(d){
+    .on("mouseover", function(d){
       tooltip
         .style("left", d3.event.pageX - 50 + "px")
         .style("top", d3.event.pageY - 70 + "px")
@@ -883,7 +883,7 @@ function drawBarValA() {
  .attr("y", d => yScale2(d.valence) - 30)
  .attr("x", d => xScale(d.song))
  .attr("preserveAspectRatio", "true")
- .on("mousemove", function(d){
+ .on("mouseover", function(d){
   tooltip
     .style("left", d3.event.pageX - 50 + "px")
     .style("top", d3.event.pageY - 70 + "px")
@@ -948,7 +948,7 @@ function drawBarLiveA() {
          return "#1DB954"
       else return "#dbdbdb";
      })
-    .on("mousemove", function(d){
+    .on("mouseover", function(d){
       tooltip
         .style("left", d3.event.pageX - 50 + "px")
         .style("top", d3.event.pageY - 70 + "px")
@@ -1002,7 +1002,7 @@ function drawBarLiveA() {
  .attr("y", d => yScale3(d.liveness) - 30)
  .attr("x", d => xScale(d.song))
  .attr("preserveAspectRatio", "true")
- .on("mousemove", function(d){
+ .on("mouseover", function(d){
   tooltip
     .style("left", d3.event.pageX - 50 + "px")
     .style("top", d3.event.pageY - 70 + "px")
@@ -1044,7 +1044,7 @@ function drawBarEnA() {
          return "#1DB954"
       else return "#dbdbdb";
      })
-    .on("mousemove", function(d){
+    .on("mouseover", function(d){
       tooltip
         .style("left", d3.event.pageX - 50 + "px")
         .style("top", d3.event.pageY - 70 + "px")
@@ -1101,7 +1101,7 @@ function drawBarEnA() {
      .attr("y", d => yScale4(d.energy) - 30)
      .attr("x", d => xScale(d.song))
      .attr("preserveAspectRatio", "true")
-     .on("mousemove", function(d){
+     .on("mouseover", function(d){
       tooltip
         .style("left", d3.event.pageX - 50 + "px")
         .style("top", d3.event.pageY - 70 + "px")
@@ -1142,7 +1142,7 @@ function drawBarTemA() {
          return "#1DB954"
       else return "#dbdbdb";
      })
-     .on("mousemove", function(d){
+     .on("mouseover", function(d){
        tooltip
          .style("left", d3.event.pageX - 50 + "px")
          .style("top", d3.event.pageY - 70 + "px")
@@ -1197,7 +1197,7 @@ function drawBarTemA() {
  .attr("y", d => yScale5(d.tempo) - 30)
  .attr("x", d => xScale(d.song))
  .attr("preserveAspectRatio", "true")
- .on("mousemove", function(d){
+ .on("mouseover", function(d){
   tooltip
     .style("left", d3.event.pageX - 50 + "px")
     .style("top", d3.event.pageY - 70 + "px")

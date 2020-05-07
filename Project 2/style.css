@@ -1,16 +1,17 @@
 
   body {
     /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
-    font-family: "superfrench", "times";
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
     padding: 1em 3em;
-    background-color: white
+    background-color: white;
+    text-align: center;
     
   }
 
 
   .axis-label {
     font-size: 1.2vw;
-    fill: black;
+    fill: blue;
     text-anchor: middle;
     font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
   }
@@ -20,15 +21,6 @@
     stroke: darkcyan;
   }
 
-  body {
-    /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
-    font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
-    padding: 1em 3em;
-    color: black;
-    fill: black; 
-    text-align: center;
-    
-  }
   
   #tooltip {
     font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
@@ -56,6 +48,7 @@
     border: 1px solid #6F257F;
     padding: 14px;
     text-align: center;
+    font-size: 1.5vw;
   }
 
   .x-axis .domain {  
@@ -71,6 +64,22 @@
 .section {
   margin: 5%;
   height: auto;
+}
+
+/* for smaller screens */
+@media (max-width: 1440px) {
+
+  section#zero {
+    width: 1500px;
+  }
+}
+
+/* for bigger creens */
+@media (min-width: 1441px) {
+
+  section#zero {
+    width: 1700px;
+  }
 }
 
 /* for smaller screens */
@@ -141,6 +150,7 @@ td {
   font-size: 2.5vw; 
   color: #00909e; 
   width: 1500px;
+  text-align: left;
 }
 
 .y-axis-label-p { 
@@ -150,8 +160,6 @@ td {
   font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
  
 }
-
-/* for smaller screens */ 
 .z-axis-label-p { 
   font-size: 1vw;
   fill: #f0a500;
@@ -167,9 +175,9 @@ td {
 .svg-container {
   display: inline-block;
   position: relative;
-  width: 100%;
   vertical-align: top;
   overflow: hidden;
+  width: 1400px;
 }
 .svg-content {
   display: inline-block;
@@ -179,16 +187,16 @@ td {
 }
 
 
-/* smaller screens */
+/* spotify vs billboard smaller screens */
 @media (max-width: 1440) {
   .popC { 
-    width: 1400px; 
+    width: 1300px; 
   }
 }
 
-/* bigger screens */
+/* spotify vs billboard bigger screens */
 @media (min-width: 1441px) {
   .popC { 
-    width: 1600px; 
+    width: 1800px; 
   }
 }
