@@ -1,0 +1,123 @@
+
+  body {
+    /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
+    font-family: "superfrench", "times";
+    padding: 1em 3em;
+    background-color: white
+    
+  }
+
+  .axis-label {
+    font-size: 14px;
+    fill: black;
+    text-anchor: middle;
+  }
+  
+  .trend {
+    fill: lightblue;
+    stroke: darkcyan;
+  }
+
+  body {
+    /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
+    font-family: "Optima", sans-serif;
+    padding: 1em 3em;
+    color: black;
+    fill: black; 
+    text-align: center;
+    
+  }
+  
+  #tooltip {
+    display: block;
+    height: 50px;
+  }
+  
+
+
+  .d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+  }
+  
+  .toolTip {
+    position: absolute;
+    display: none;
+    min-width: 80px;
+    height: auto;
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #6F257F;
+    padding: 14px;
+    text-align: center;
+  }
+
+  .axis .domain {  
+     display: none;  
+     font-size: 16px;        
+  } 
+
+  /* section */
+  
+.section {
+  margin: 5%;
+  height: auto;
+}
+
+.section#one {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: 50% 50%
+}
+
+.section#one > .text {
+  height: auto;
+  grid-column: 1 / 2;
+}
+
+.section#one > .graph {
+  grid-column: 1/2;
+}
+
+.section#two {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: 40% 60%;
+}
+
+.section#two > .text {
+  grid-column: 2 / 3;
+}
+
+.section#two > .graph {
+  grid-column: 0 / 2; 
+  grid-row: 1;
+}
+
+.high {
+  background-color: #9dc6a7;
+}
+
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  padding: 0 0.5em;
+}
+
+tr {
+  border-bottom: solid 1px #d3d3d3;
+  line-height: 1.75;
+}
+
+td {
+  text-align: center;
+  padding: 0 0.5em;
+  background-color: aliceblue;
+}
+
