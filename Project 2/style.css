@@ -134,11 +134,11 @@ td {
 .main-header {
   float: right; 
   color: #27496d; 
-  font-size: 4vw;
+  font-size: 3.3vw;
 }
 
 .comp-header { 
-  font-size: 3vw; 
+  font-size: 2.5vw; 
   color: #00909e; 
   width: 1500px;
 }
@@ -225,5 +225,19 @@ td {
 @media (min-width: 1441px) { 
   .y-axis {
     transform: translate(120px, 0px);
+  }
+}
+
+/* smaller screens */
+@media (max-width: 1440) {
+  .popC { 
+    width: 1400px; 
+  }
+}
+
+/* bigger screens */
+@media (min-width: 1441px) {
+  .popC { 
+    width: 1600px; 
   }
 }
