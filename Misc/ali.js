@@ -8,7 +8,7 @@ const
  // margin = { top: 200, bottom: 200, left: 200, right: 200 },
   width = 750 -margin.left - margin.right,
   height = 300 + margin.top - margin.bottom,
-  categoriesCount = 6,
+  categoriesCount = 3, 
   legendWidth = 60,
   default_selection = "all",
   default_reason = "all", 
@@ -131,7 +131,12 @@ const rect = svg
           //put the cells on top of the y increments to prevent x-axis labels overlapping
           .attr('y', d => y(d.District))
           //set colors based on count
-          .attr('fill', d => colorFn(d.Rate))
+          .attr('fill', d => { 
+            if (d.Rate >= 0 && d.Rate <= 50)  return "#178bdd";
+            else if (d.Rate >= 51 && d.Rate <= 80) return "#1d1ebc"
+            else return "00009c" })
+          
+          //colorFn(d.Rate)
           .style("stroke", "#d6cdb7")
          // .attr("fill", d => (legend.selected ? color(d.count) : "white")) 
          .on("mouseover", function(d){
@@ -171,10 +176,14 @@ const categories = [...Array(categoriesCount)].map((_, i) => {
 
 legend
    .selectAll("rect")
-   .data(categories)
+   .data(state.data)
    .enter()
    .append('rect')
-   .attr('fill', d => d.color)
+  // .attr('fill', d => d.color)
+  .attr('fill', d => { 
+    if (d.Rate >= 0 && d.Rate <= 50)  return "#178bdd";
+    else if (d.Rate >= 51 && d.Rate <= 80) return "#1d1ebc";
+    else return "00009c" })
    .attr('x', (d, i) => legendWidth * i)
    .attr('width', legendWidth)
    .attr('height', 15);

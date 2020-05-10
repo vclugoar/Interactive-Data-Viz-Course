@@ -88,10 +88,6 @@ d3.csv("../data/feature_comp.csv", d3.autoType)
   state.data2 = data2;
   state.data3 = data3; 
   state.data4 = data4;  
-  console.log("orig", state.data);
-  console.log("dedup", state.data2);
-  console.log("dedup top", state.data3);
-  console.log("comp", state.data4)
   init();
 });
 
@@ -565,7 +561,6 @@ function drawBarPop() {
   .call(xAxis1)
   .append("text")
   .attr("class", "axis-label")
-  
   .attr("x", "50%")
   .attr("dx", "-2em")
   .attr("dy", "2em")
@@ -599,7 +594,7 @@ function drawBarPop() {
       .style("left", d3.event.pageX - 50 + "px")
       .style("top", d3.event.pageY - 70 + "px")
       .style("display", "inline-block")
-      .html((d.song) + "<br>"  + "Total weeks: " + (d.total_weeks));
+      .html((d.song) + "<br>"  + "Total weeks on chart: " + (d.total_weeks));
 })
   .on("mouseout", function(d){ tooltip.style("display", "none");});
 ;
@@ -616,7 +611,7 @@ barsvg7
   .attr("dx", "3em")
   .attr("dy", "-3em")
   .attr("writing-mode", "vertical-rl")
-  .text("Total Number of Weeks in Chart")
+  .text("Total Number of Weeks on Billboard Chart")
   ;
 
 
@@ -657,7 +652,7 @@ function drawBarDncA() {
         .style("left", d3.event.pageX - 50 + "px")
         .style("top", d3.event.pageY - 70 + "px")
         .style("display", "inline-block")
-        .html((d.song) + "<br>"  + "Danceability score: " + (d.danceability));
+        .html((d.song) + "<br>"  + "Danceability score: " + (d.danceability) );
   })
   .on("mouseout", function(d){ tooltip.style("display", "none");});
   
@@ -1248,8 +1243,8 @@ function drawTable() {
     .style("font-size", "20px")
     // update the below logic to apply to your dataset
     .attr("class", d => { 
-      if (+d === 0.8202 || +d ===  0.11442 || +d === 123.7482
-        || +d === 0.1183 || +d === 0.5132 || +d === 0.5504 ) return  'high';
+      if (+d === 123.75 || +d === 0.12 ) return  'low';
+      else if (+d === 0.82 || +d === 0.51 || +d === 0.55 ) return 'high';
 
     });
 

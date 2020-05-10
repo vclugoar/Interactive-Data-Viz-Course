@@ -1,7 +1,7 @@
 
   body {
     /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
     padding: 1em 3em;
     background-color: white;
     text-align: center;
@@ -11,9 +11,9 @@
 
   .axis-label {
     font-size: 1.2vw;
-    fill: purple;
+    fill: black;
     text-anchor: middle;
-    font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
   }
   
   .trend {
@@ -23,7 +23,7 @@
 
   
   #tooltip {
-    font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
+    font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif sans-serif';
     display: block;
     height: 50px;
   }
@@ -48,13 +48,12 @@
     border: 1px solid #6F257F;
     padding: 14px;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
   }
 
   .x-axis .domain {  
      display: none;  
-     font-size: 1.2vw; 
-     font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;       
+     font-size: 1.2vw;     
   } 
 
 
@@ -128,7 +127,11 @@
 }
 
 .high {
-  background-color: #9dc6a7;
+  background-color: #1a936f;
+}
+
+.low { 
+  background-color: #88d498;
 }
 
 
@@ -138,6 +141,7 @@ table {
 
 th {
   padding: 0 0.5em;
+
 }
 
 tr {
@@ -148,17 +152,17 @@ tr {
 td {
   text-align: center;
   padding: 0 0.5em;
-  background-color: aliceblue;
+  background-color: #F8F8FF;
 }
 
 .main-header {
   float: right; 
   color: #27496d; 
-  font-size: 3.3vw;
+  font-size: 3vw;
 }
 
 .comp-header { 
-  font-size: 2.5vw; 
+  font-size: 2.4vw; 
   color: #00909e; 
   width: 1500px;
   text-align: left;
@@ -168,14 +172,14 @@ td {
   font-size: 1vw;
   fill: gray;
   text-anchor: middle;
-  font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
  
 }
 .z-axis-label-p { 
   font-size: 1vw;
   fill: #f0a500;
   text-anchor: middle;
-  font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
 
 }
 

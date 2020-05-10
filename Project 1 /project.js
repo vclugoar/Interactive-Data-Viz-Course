@@ -1,5 +1,5 @@
-/* CONSTANTS AND GLOBALS */
 
+/* CONSTANTS AND GLOBALS */
 const 
   margin = {top: 150, right: 20, bottom: 300, left: 110},
   
@@ -20,8 +20,6 @@ const
   paddingInner1 = 0.2
   ;
 
-// these variables allow us to access anything we manipulate in init() but need access to in draw().
-// All these variables are empty before we assign something to them.
 let svg;
 let barsvg;
 let x; 
@@ -43,13 +41,11 @@ let state = {
   },
   selectedOutcome: default_selection, 
   selectedReason: default_reason ,
-  selectedSex: default_sex // + YOUR FILTER SELECTION
 };
 
 /* LOAD DATA */
 d3.csv("../data/u_nola.csv", d3.autoType).then(data => {
   state.data = data, 
-  console.log(state.data)
   init();
 })
 
@@ -75,7 +71,6 @@ function init() {
   .text(d => d);
 
   // + SET SELECT ELEMENT'S DEFAULT VALUE (optional)
-  // this ensures that the selected value is the same as what we have in state when we initialize the options
   selectElement.property("value", default_selection);
   //end of ui for heatmap 
 
@@ -98,12 +93,11 @@ function init() {
     .text(d => d);
   
     // + SET SELECT ELEMENT'S DEFAULT VALUE (optional)
-    // this ensures that the selected value is the same as what we have in state when we initialize the options
     selectElement2.property("value", default_reason);
     //end of ui for barchart 
   
 
-  // SCALES
+  // SCALES for heatmap 
   x = d3
     .scaleBand()
     .domain(state.data.map((d) => d.year))
@@ -128,7 +122,6 @@ function init() {
   minValue = d3.min(values);  
 
   // bar chart scales 
-  /** SCALES */
   xScale = d3
     .scaleBand()
     .domain(state.data.map(d => d.outcome))
@@ -139,7 +132,6 @@ function init() {
     .scaleLinear()
     .domain([0, d3.max(state.data, d => d.count)])
     .range([height1 - margin1.bottom, margin1.top]);
-   //.range([height1 - margin1.bottom, 0]);
 
   // create svg element for heatmap 
   svg = d3
@@ -150,7 +142,7 @@ function init() {
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-    //.attr("align", "right");
+
 
   // create svg element for barchart 
   barsvg = d3
@@ -159,11 +151,10 @@ function init() {
     .append("svg")
     .attr("width", width1 + margin1.left + margin1.right)
     .attr("height", height1 + margin1.top + margin1.bottom)
-   //.attr("height", 200)
     .append("g")
     .attr("transform", "translate(" + margin1.left + "," + margin1.top + ")");
   
-  // y and x axis
+  // y and x axes for heatmap
   xAxis = d3.axisBottom(x);
   yAxis = d3.axisLeft(y);
 
@@ -184,7 +175,6 @@ function init() {
     .classed('y axis', true)
     .call(yAxis);
 
-  // call axes for bar chart
   
 
   // call the draw function 
@@ -194,22 +184,15 @@ function init() {
 
 function draw() { 
 
-  // filteredData = state.data.filter(d =>  
-  //   d.outcome === state.selectedOutcome || state.selectedOutcome === default_selection);
-
- // let filteredData = state.data; 
 
   filteredData = state.data.filter(d => {
     let tokeep;  
-    // selected outcome logic
+
     tokeep = ( d.outcome === state.selectedOutcome )
-    // // subject reason logic 
-    // tokeep = tokeep && (d.reason_for_stop === state.selectedReason);
-    // state.selectedSex === default_sex
+
     return tokeep; 
   
   }) 
-   console.log("filteredDat", filteredData); 
 
 const rect = svg
     .selectAll("rect")
@@ -226,17 +209,14 @@ const rect = svg
           //set colors based on count
           .attr('fill', d => colorFn(d.count))
           .style("stroke", "#d6cdb7")
-         // .attr("fill", d => (legend.selected ? color(d.count) : "white")) 
           ,
-      
-        
-      update => update, // pass through the update selection
+      update => update, 
       exit => exit.remove()
   
     )
     .call(selection =>
       selection
-        .transition() // sets the transition on the 'Enter' + 'Update' selections together.
+        .transition() 
        
     );
      
@@ -250,7 +230,7 @@ const legend = group
          "transform",
          `translate(-10, 200)`
         );
-        //${5 * height + cellSize * 4}
+
 const categories = [...Array(categoriesCount)].map((_, i) => {
     const upperBound = maxValue / categoriesCount * (i + 1);
     const lowerBound = maxValue / categoriesCount * i;
@@ -291,7 +271,6 @@ legend
     .attr("dy", -5)
     .attr("font-size", 14)
     .attr("text-decoration", "underline");
-  
 
   
 }
@@ -301,13 +280,10 @@ function drawBar() {
     let tokeep;  
     // selected outcome logic
     tokeep = ( d.reason_for_stop === state.selectedReason || state.selectedReason === default_reason) 
-    // // subject reason logic 
-    // tokeep = tokeep && (d.reason_for_stop === state.selectedReason);
-    // state.selectedSex === default_sex
+
     return tokeep; 
   
   }) 
-   console.log("filteredDat", filteredData); 
 
   // append rects
   const rect2 = barsvg
@@ -317,38 +293,29 @@ function drawBar() {
     .attr("y", d => yScale(d.count))
     .attr("x", d => xScale(d.outcome))
     .attr("width", xScale.bandwidth())
-  //  .attr('height', yScale.domain())
     .attr("height", d => height1 - margin1.bottom - yScale(d.count))
     .attr("fill", "thistle");
   
-    
-
   // append text
   const text = barsvg
     .selectAll("text")
     .data(state.data)
     .join("text")
     .attr("class", "label")
-    // this allows us to position the text in the center of the bar
     .attr("x", d => xScale(d.outcome) + (xScale.bandwidth() / 2))
     .attr("y", d => yScale(d.count))
-    //.text(d => d.count);
-  //  .attr("dy", "1.25em")
     ;
 
   barsvg
     .append("g")
     .attr("class", "axis")
     .attr("transform", `translate(0, ${height1 - margin1.bottom})`)
-    //.attr('transform', 'translate(0,' + height + ')')
-    //.attr('transform', 'translate(-100,' + 140 + ')')
     .call(xAxis1);
 
   barsvg.append('g')
     .classed('y axis', true)
     .call(yAxis1.scale(yScale))
     .attr('transform', 'translate(40, 0)')
-  //  .attr('transform', 'rotate(180)')
     ;
 
 

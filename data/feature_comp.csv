@@ -1,7 +1,7 @@
 ﻿Feature,Billboard,Spotify
-Danceability,0.8202,0.6846
-Speechiness,0.11442,0.1107
-Tempo,122.2048,123.7482
-Liveness,0.1183,0.1147
-Energy ,0.5132,0.444
-Valence,0.4506,0.5504
+Danceability,0.82,0.68
+Speechiness,0.11,0.11
+Tempo,122.20,123.75
+Liveness,0.12,0.11
+Energy ,0.51,0.44
+Valence,0.45,0.55
