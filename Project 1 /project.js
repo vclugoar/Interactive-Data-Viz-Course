@@ -318,5 +318,19 @@ function drawBar() {
     .attr('transform', 'translate(40, 0)')
     ;
 
+     // y axis label
+     barsvg.append('g')
+     .call(yAxis1.scale(yScale))
+     .attr('transform', 'translate(40, 0)')
+     .append("text")
+     .attr("y", "50%")
+     .attr("dx", "-3em")
+     .attr("dy", "-3em")
+     .attr("writing-mode", "vertical-rl")
+     .text("Popularity Score")
+     
+      ; 
+ 
+
 
 }

@@ -8,7 +8,7 @@ const
  // margin = { top: 200, bottom: 200, left: 200, right: 200 },
   width = 750 -margin.left - margin.right,
   height = 300 + margin.top - margin.bottom,
-  categoriesCount = 3, 
+  categoriesCount = 10, 
   legendWidth = 60,
   default_selection = "all",
   default_reason = "all", 
@@ -71,7 +71,7 @@ function init() {
     .range([height, -88]);
 
   colorFn = d3
-      .scaleSequential(d3.interpolatePuBuGn)
+      .scaleSequential(d3.interpolateBlues)
       .domain(d3.extent(state.data, d => d.Rate));
 
   
@@ -112,10 +112,10 @@ function init() {
 
 
   // call the draw function 
-  draw(); 
+  draw1(); 
 }  
 
-function draw() { 
+function draw1() { 
 
 
 const rect = svg
@@ -131,10 +131,7 @@ const rect = svg
           //put the cells on top of the y increments to prevent x-axis labels overlapping
           .attr('y', d => y(d.District))
           //set colors based on count
-          .attr('fill', d => { 
-            if (d.Rate >= 0 && d.Rate <= 50)  return "#178bdd";
-            else if (d.Rate >= 51 && d.Rate <= 80) return "#1d1ebc"
-            else return "00009c" })
+          .attr('fill', d => colorFn(d.Rate))
           
           //colorFn(d.Rate)
           .style("stroke", "#d6cdb7")
@@ -168,7 +165,31 @@ const categories = [...Array(categoriesCount)].map((_, i) => {
    return {
      upperBound,
      lowerBound,
-     color: d3.interpolatePuBuGn(upperBound / maxValue), 
+     color: d3.interpolateBlues(upperBound / maxValue), 
+     selected: true 
+     
+    };
+});
+
+drawLegend();
+  
+}; 
+function drawLegend() { 
+  const group = svg.append("g");
+
+const legend = group
+  .attr("class", "leg")
+  .attr("transform",
+         `translate(-10, 200)`);
+
+const categories = [...Array(categoriesCount)].map((_, i) => {
+    const upperBound = maxValue / categoriesCount * (i + 1);
+    const lowerBound = maxValue / categoriesCount * i;
+
+   return {
+     upperBound,
+     lowerBound,
+     color: d3.interpolateBlues(upperBound / maxValue), 
      selected: true 
      
     };
@@ -176,14 +197,10 @@ const categories = [...Array(categoriesCount)].map((_, i) => {
 
 legend
    .selectAll("rect")
-   .data(state.data)
+   .data(categories)
    .enter()
    .append('rect')
-  // .attr('fill', d => d.color)
-  .attr('fill', d => { 
-    if (d.Rate >= 0 && d.Rate <= 50)  return "#178bdd";
-    else if (d.Rate >= 51 && d.Rate <= 80) return "#1d1ebc";
-    else return "00009c" })
+   .attr('fill', d => d.color)
    .attr('x', (d, i) => legendWidth * i)
    .attr('width', legendWidth)
    .attr('height', 15);
@@ -202,10 +219,103 @@ legend
 
   legend
     .append("text")
-    .attr("dy", -5)
-    .attr("font-size", 14)
-    .attr("text-decoration", "underline");
-  
+    .attr("dy", 0)
 
   
 }
+
+
+// function draw2() { 
+
+
+//   const rect = svg
+//       .selectAll("rect")
+//       .data(state.data)
+//       .join(
+//         enter =>
+//           enter
+//             .append("rect")
+//             .attr('width', cellSize +15)
+//             .attr('height', cellSize )
+//             .attr('x', d => x(d.Session))
+//             //put the cells on top of the y increments to prevent x-axis labels overlapping
+//             .attr('y', d => y(d.District))
+//             //set colors based on count
+//             .attr('fill', d => { 
+//               if (d.Rate >= 0 && d.Rate <= 50)  return "#178bdd";
+//               else if (d.Rate >= 51 && d.Rate <= 80) return "#1d1ebc"
+//               else return "00009c" })
+            
+//             //colorFn(d.Rate)
+//             .style("stroke", "#d6cdb7")
+//            // .attr("fill", d => (legend.selected ? color(d.count) : "white")) 
+//            .on("mouseover", function(d){
+//             tooltip
+//               .style("left", d3.event.pageX - 50 + "px")
+//               .style("top", d3.event.pageY - 70 + "px")
+//               .style("display", "inline-block")
+//               .html("Session: " + (d.Session) + "<br>" + "Rate: " + (d.Rate)); })
+    
+//            .on("mouseout", function(d){ tooltip.style("display", "none")})  
+//       )
+      
+//       ;
+       
+//     // legend code
+  
+//   const group = svg.append("g");
+  
+//   const legend = group
+//          .attr("class", "leg")
+//          .attr(
+//            "transform",
+//            `translate(-10, 200)`
+//           );
+//   const categories = [...Array(categoriesCount)].map((_, i) => {
+//       const upperBound = maxValue / categoriesCount * (i + 1);
+//       const lowerBound = maxValue / categoriesCount * i;
+  
+//      return {
+//        upperBound,
+//        lowerBound,
+//        color: d3.interpolatePuBuGn(upperBound / maxValue), 
+//        selected: true 
+       
+//       };
+//   });
+  
+//   legend
+//      .selectAll("rect")
+//      .data(state.data)
+//      .enter()
+//      .append('rect')
+//     // .attr('fill', d => d.color)
+//     .attr('fill', d => { 
+//       if (d.Rate >= 0 && d.Rate <= 50)  return "#178bdd";
+//       else if (d.Rate >= 51 && d.Rate <= 80) return "#1d1ebc";
+//       else return "00009c" })
+//      .attr('x', (d, i) => legendWidth * i)
+//      .attr('width', legendWidth)
+//      .attr('height', 15);
+  
+//    legend
+//       .selectAll("text")
+//       .data(categories)
+//       .join("text")
+//       .attr("transform", "rotate(90)")
+//       .attr("y", (d, i) => -legendWidth * i)
+//       .attr("dy", -30)
+//       .attr("x", 18)
+//       .attr("text-anchor", "start")
+//       .attr("font-size", 11)
+//       .text(d => `${d.lowerBound.toFixed()} - ${d.upperBound.toFixed(0)}`);
+  
+//     legend
+//       .append("text")
+//       .attr("dy", -5)
+//       .attr("font-size", 14)
+//       .attr("text-decoration", "underline");
+    
+  
+    
+//   }

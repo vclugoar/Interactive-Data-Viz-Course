@@ -108,6 +108,7 @@
   font-size: 1.4vw;
 }
 
+
 /* for smaller screens */
 @media (max-width: 1440px) {
   .section#one > .graph {
